@@ -9,299 +9,408 @@
     
 </head>
 <body>
-
-    <!-- SECCIÓN 1: HERO -->
-    <section class="hero">
-        <h1 class="hero-title">✨ Tujdnaudhad✨</h1>
-        <div class="hero-questions">
-            <p>¿Te distraes fácilmente con tu celular?</p>
-            <p>¿Los días se te van sin darte cuenta?</p>
-            <p>¿Sientes que estás sobreviviendo en lugar de vivir?</p>
-            <p class="hero-highlight">Si respondiste "sí" a cualquiera... <br>Hay algo que ya sabes, pero sigues ignorando...</p>
-        </div>
-    </section>
-
-    <!-- SECCIÓN 2: PROBLEMA -->
-    <section class="problem-section">
-        <h2>🔥 Elshdadijer 🔥</h2>
-        <p>La mayoría de personas ismasnarewqfht</p>
-    </section>
-
-    <!-- SECCIÓN 3: VIDEO CAROUSEL -->
-    <section class="video-section">
-        <h2>📹 Testimonios Reales 📹</h2>
-        <div class="video-carousel">
-            <div class="video-card">
-                <div class="video-placeholder">▶️</div>
-            </div>
-            <div class="video-card">
-                <div class="video-placeholder">▶️</div>
-            </div>
-            <div class="video-card">
-                <div class="video-placeholder">▶️</div>
-            </div>
-            <div class="video-card">
-                <div class="video-placeholder">▶️</div>
+    <!-- ENCABEZADO -->
+    <header class="encabezado">
+        <div class="contenedor-nav">
+            <div class="logo">
+                <span>🐺</span>
+                <span>CAMINO DEL ALFA</span>
             </div>
         </div>
-    </section>
+    </header>
 
-    <!-- SECCIÓN 4: CARACTERÍSTICAS -->
-    <section class="features-section">
-        <h2 class="features-title">🎯 Lo Que Vas a Conseguir 🎯</h2>
-        <div class="features-grid">
-            <div class="feature-card">
-                <div class="feature-icon">🧠</div>
-                <h3>Claridad Mental</h3>
-                <p>Elimina el ruido mental y toma decisiones con confianza</p>
+    <!-- TIMER FLOTANTE -->
+    <div class="timer-flotante">
+        <div class="contenedor-timer">
+            <div class="fondo-timer"></div>
+            <div class="lobo-fondo" id="loboTimer">🐺</div>
+            <svg class="svg-timer" viewBox="0 0 180 180">
+                <defs>
+                    <linearGradient id="gradient-timer" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#d4af37;stop-opacity:1" />
+                        <stop offset="50%" style="stop-color:#ffd700;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#d4af37;stop-opacity:1" />
+                    </linearGradient>
+                </defs>
+                <circle class="circulo-timer circulo-fondo" cx="90" cy="90" r="82"></circle>
+                <circle class="circulo-timer circulo-progreso" id="circuloProgreso" cx="90" cy="90" r="82"></circle>
+            </svg>
+            <div class="info-timer">
+                <div class="etiqueta-timer">OFERTA</div>
+                <div class="tiempo-timer" id="tiempoDisplay">15:00</div>
+                <div class="mensaje-timer">¡No lo dejes<br>escapar!</div>
             </div>
-            <div class="feature-card">
-                <div class="feature-icon">⚡</div>
-                <h3>Más Energía</h3>
-                <p>Despierta con propósito y termina el día satisfecho</p>
+        </div>
+    </div>
+
+    <!-- SECCIÓN 1: HERO MINIMALISTA -->
+    <section class="seccion-hero-principal">
+        <div class="contenedor-hero-principal">
+            <div class="contenido-izquierdo">
+                <div class="insignia-hero">🔥 DESDE TIKTOK A TU TRANSFORMACIÓN</div>
+                <h1 class="titulo-principal">CAMINO DEL<br><span class="titulo-destacado">ALFA</span></h1>
+                <p class="subtitulo-principal">Despierta al Lobo que Llevas Dentro</p>
+                <a href="#presentacion" class="boton-cta-principal">Comenzar Ahora</a>
             </div>
-            <div class="feature-card">
-                <div class="feature-icon">🎯</div>
-                <h3>Enfoque Laser</h3>
-                <p>Di adiós a las distracciones y multiplica tu productividad</p>
-            </div>
-            <div class="feature-card">
-                <div class="feature-icon">💪</div>
-                <h3>Disciplina Real</h3>
-                <p>Crea hábitos que realmente se quedan contigo</p>
+            <div class="contenido-derecho">
+                <div class="imagen-lobo">🐺</div>
             </div>
         </div>
     </section>
 
-    <!-- SECCIÓN 5: PRODUCTOS -->
-    <section class="products-section">
-        <div class="products-grid">
-            <div class="product-card">
-                <div class="product-image">📚</div>
-                <h3>Producto 1</h3>
-                <p>Descripción del primer producto digital</p>
-                <div class="product-price">$29</div>
+    <!-- SECCIÓN 2: PRESENTACIÓN -->
+    <section id="presentacion" class="seccion-presentacion">
+        <div class="contenedor-presentacion">
+            <h2 class="titulo-presentacion">¿Te Identificas con Esto?</h2>
+            <div class="grid-preguntas">
+                <div class="tarjeta-pregunta">
+                    <div class="icono-pregunta">🐺</div>
+                    <p>¿Vives en piloto automático sin propósito claro?</p>
+                </div>
+                <div class="tarjeta-pregunta">
+                    <div class="icono-pregunta">🐺</div>
+                    <p>¿Te falta disciplina para lograr tus metas?</p>
+                </div>
+                <div class="tarjeta-pregunta">
+                    <div class="icono-pregunta">🐺</div>
+                    <p>¿Quieres desarrollar mentalidad de líder?</p>
+                </div>
+                <div class="tarjeta-pregunta">
+                    <div class="icono-pregunta">🐺</div>
+                    <p>¿Listo para dejar de ser oveja y convertirte en lobo?</p>
+                </div>
             </div>
-            <div class="product-card">
-                <div class="product-image">🎧</div>
-                <h3>Producto 2</h3>
-                <p>Descripción del segundo producto digital</p>
-                <div class="product-price">$39</div>
-            </div>
-            <div class="product-card">
-                <div class="product-image">🧘</div>
-                <h3>Producto 3</h3>
-                <p>Descripción del tercer producto digital</p>
-                <div class="product-price">$49</div>
-            </div>
-            <div class="product-card">
-                <div class="product-image">💎</div>
-                <h3>Producto 4</h3>
-                <p>Descripción del cuarto producto digital</p>
-                <div class="product-price">$59</div>
+            <div class="cta-presentacion">
+                <p class="texto-cta">Si respondiste SÍ a cualquiera, estás en el lugar correcto</p>
+                <a href="#libros" class="boton-cta">Descubrir los Libros</a>
             </div>
         </div>
     </section>
 
-    <!-- SECCIÓN 6: PAQUETE COMPLETO -->
-    <section class="bundle-section">
-        <h2>🎁 PAQUETE COMPLETO 🎁</h2>
-        <div class="bundle-content">
-            <h3>Los 4 Productos + Bonos Exclusivos</h3>
-            <p style="font-size: 1.2rem; margin: 20px 0;">Valor normal: <span style="text-decoration: line-through;">$176</span></p>
-            <div class="bundle-price">$97</div>
-            <p style="font-size: 1.3rem; margin-bottom: 30px;">¡Ahorra $79 HOY! 😱</p>
-            <button class="cta-button">QUIERO EL PAQUETE</button>
-        </div>
-    </section>
+    <!-- SECCIÓN 3: LIBROS -->
+    <section id="libros" class="seccion-libros">
+        <h2 class="titulo-seccion">📚 Nuestra Colección de Libros 📚</h2>
+        <div class="contenedor-libros">
+            <div class="tarjeta-libro">
+                <div class="etiqueta-libro">Bestseller</div>
+                <div class="portada-libro">📖</div>
+                <h3>El Despertar del Alfa</h3>
+                <p class="descripcion-libro">Tu guía completa para desarrollar mentalidad de líder, disciplina inquebrantable y propósito de vida.</p>
+                <div class="precio-libro">
+                    <span class="precio-anterior">$49</span>
+                    $29
+                </div>
+                <a href="#" class="boton-cta">Comprar Ahora</a>
+            </div>
 
-    <!-- SECCIÓN 7: ESTADÍSTICAS -->
-    <section class="stats-section">
-        <h2 class="stats-title">¿Por Qué Elegirnos?</h2>
-        <div class="stats-grid">
-            <div class="stat-card">
-                <div class="stat-number">900+</div>
-                <div class="stat-label">Resultados Comprobados ✨</div>
-                <div class="stat-description">Personas han transformado su mentalidad con nuestras guías</div>
+            <div class="tarjeta-libro">
+                <div class="etiqueta-libro">Nuevo</div>
+                <div class="portada-libro">🧠</div>
+                <h3>Mentalidad Inquebrantable</h3>
+                <p class="descripcion-libro">Construye una mente de acero que te permita superar adversidades y alcanzar metas ambiciosas.</p>
+                <div class="precio-libro">
+                    <span class="precio-anterior">$45</span>
+                    $27
+                </div>
+                <a href="#" class="boton-cta">Comprar Ahora</a>
             </div>
-            <div class="stat-card">
-                <div class="stat-number">100%</div>
-                <div class="stat-label">Método Único 🔍</div>
-                <div class="stat-description">Herramientas diseñadas para elevar tu enfoque y disciplina</div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-number">500K+</div>
-                <div class="stat-label">Comunidad Activa 🤝</div>
-                <div class="stat-description">Personas conectadas apoyándose en su proceso de despertar</div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-number">21 días</div>
-                <div class="stat-label">Transformación Rápida ⚡</div>
-                <div class="stat-description">Cambios reales en tu energía y mentalidad en 3 semanas</div>
-            </div>
-        </div>
-    </section>
 
-    <!-- SECCIÓN 8: TESTIMONIOS CAROUSEL -->
-    <section class="testimonials-section">
-        <h2 class="testimonials-title">💬 Lo Que Dicen Quienes Ya Despertaron</h2>
-        <div class="testimonials-carousel">
-            <div class="testimonial-card">
-                <div class="testimonial-header">
-                    <div class="testimonial-avatar">LG</div>
-                    <div class="testimonial-name">Laura Gómez</div>
+            <div class="tarjeta-libro">
+                <div class="etiqueta-libro">Popular</div>
+                <div class="portada-libro">⚡</div>
+                <h3>Disciplina del Lobo</h3>
+                <p class="descripcion-libro">Los secretos de la autodisciplina que separan a los lobos de las ovejas. Acción consistente.</p>
+                <div class="precio-libro">
+                    <span class="precio-anterior">$39</span>
+                    $25
                 </div>
-                <p class="testimonial-text">"Subí mi productividad al ordenar mi día en bloques simples; termino lo importante sin agotarme."</p>
-            </div>
-            <div class="testimonial-card">
-                <div class="testimonial-header">
-                    <div class="testimonial-avatar">MT</div>
-                    <div class="testimonial-name">Miguel Torres</div>
-                </div>
-                <p class="testimonial-text">"Multipliqué resultados al enfocarme en 2 prioridades al día; productividad sin desgaste."</p>
-            </div>
-            <div class="testimonial-card">
-                <div class="testimonial-header">
-                    <div class="testimonial-avatar">AR</div>
-                    <div class="testimonial-name">Ana Rodríguez</div>
-                </div>
-                <p class="testimonial-text">"Volví a confiar en mis decisiones: me escucho, pongo límites y actúo con seguridad."</p>
-            </div>
-            <div class="testimonial-card">
-                <div class="testimonial-header">
-                    <div class="testimonial-avatar">CP</div>
-                    <div class="testimonial-name">Carlos Pérez</div>
-                </div>
-                <p class="testimonial-text">"La confianza volvió al cumplir promesas pequeñas conmigo; me creo capaz y avanzo."</p>
-            </div>
-            <div class="testimonial-card">
-                <div class="testimonial-header">
-                    <div class="testimonial-avatar">SM</div>
-                    <div class="testimonial-name">Sofía Martínez</div>
-                </div>
-                <p class="testimonial-text">"Dejé de postergar lo clave: doy el primer paso aunque sea pequeño y sostengo el impulso."</p>
-            </div>
-            <div class="testimonial-card">
-                <div class="testimonial-header">
-                    <div class="testimonial-avatar">JH</div>
-                    <div class="testimonial-name">Julián Herrera</div>
-                </div>
-                <p class="testimonial-text">"Corté la cadena del 'luego lo hago'; inicio sin drama y cierro pendientes que pesaban."</p>
-            </div>
-            <!-- Duplicados para el efecto infinito -->
-            <div class="testimonial-card">
-                <div class="testimonial-header">
-                    <div class="testimonial-avatar">LG</div>
-                    <div class="testimonial-name">Laura Gómez</div>
-                </div>
-                <p class="testimonial-text">"Subí mi productividad al ordenar mi día en bloques simples; termino lo importante sin agotarme."</p>
-            </div>
-            <div class="testimonial-card">
-                <div class="testimonial-header">
-                    <div class="testimonial-avatar">MT</div>
-                    <div class="testimonial-name">Miguel Torres</div>
-                </div>
-                <p class="testimonial-text">"Multipliqué resultados al enfocarme en 2 prioridades al día; productividad sin desgaste."</p>
+                <a href="#" class="boton-cta">Comprar Ahora</a>
             </div>
         </div>
     </section>
 
-    <!-- SECCIÓN 9: COMPARACIÓN -->
-    <section class="comparison-section">
-        <h2 class="comparison-title">⚔️ ¿De Qué Lado Vas a Estar? ⚔️</h2>
-        <div class="comparison-container">
-            <div class="comparison-side comparison-left">
-                <h3>🚫 Los Que Continúan</h3>
+    <!-- SECCIÓN 4: PAQUETE COMPLETO -->
+    <section class="seccion-paquete">
+        <div class="contenedor-paquete">
+            <h2 class="titulo-paquete">🎁 Paquete Completo Alfa 🎁</h2>
+            <p class="subtitulo-paquete">Los 3 Libros + Bonos Exclusivos</p>
+            
+            <ul class="lista-paquete">
+                <li class="item-paquete">
+                    <span class="icono-item">📖</span>
+                    <div class="info-item">
+                        <h4>El Despertar del Alfa</h4>
+                        <p>Fundamentos de transformación personal</p>
+                    </div>
+                </li>
+                <li class="item-paquete">
+                    <span class="icono-item">🧠</span>
+                    <div class="info-item">
+                        <h4>Mentalidad Inquebrantable</h4>
+                        <p>Fortaleza mental y resiliencia</p>
+                    </div>
+                </li>
+                <li class="item-paquete">
+                    <span class="icono-item">⚡</span>
+                    <div class="info-item">
+                        <h4>Disciplina del Lobo</h4>
+                        <p>Hábitos y consistencia diaria</p>
+                    </div>
+                </li>
+                <li class="item-paquete">
+                    <span class="icono-item">🎯</span>
+                    <div class="info-item">
+                        <h4>BONO: Plan Maestro 90 Días</h4>
+                        <p>Guía día a día para tu transformación</p>
+                    </div>
+                </li>
+                <li class="item-paquete">
+                    <span class="icono-item">🎧</span>
+                    <div class="info-item">
+                        <h4>BONO: Audiolibros Completos</h4>
+                        <p>Versión en audio de todos los libros</p>
+                    </div>
+                </li>
+            </ul>
+
+            <div class="precio-paquete">
+                <p class="valor-normal">Valor individual: <span>$133</span></p>
+                <div class="precio-final">$69</div>
+                <p class="ahorro">¡Ahorra $64 hoy! 🔥</p>
+            </div>
+
+            <a href="#" class="boton-cta">Quiero el Paquete Completo</a>
+        </div>
+    </section>
+
+    <!-- SECCIÓN 5: TESTIMONIOS -->
+    <section class="seccion-testimonios">
+        <h2 class="titulo-seccion">💬 Lobos Que Ya Despertaron 💬</h2>
+        <div class="carrusel-testimonios">
+            <div class="tarjeta-testimonio">
+                <div class="encabezado-testimonio">
+                    <div class="avatar-testimonio">JR</div>
+                    <div class="info-testimonio">
+                        <div class="nombre-testimonio">Juan Ramírez</div>
+                        <div class="rol-testimonio">Emprendedor</div>
+                    </div>
+                </div>
+                <p class="texto-testimonio">Camino del Alfa cambió mi mentalidad. Pasé de procrastinar a tener disciplina diaria. Mis resultados hablaron por sí solos.</p>
+                <div class="calificacion-testimonio">⭐⭐⭐⭐⭐</div>
+            </div>
+
+            <div class="tarjeta-testimonio">
+                <div class="encabezado-testimonio">
+                    <div class="avatar-testimonio">MC</div>
+                    <div class="info-testimonio">
+                        <div class="nombre-testimonio">María Contreras</div>
+                        <div class="rol-testimonio">Líder de Equipo</div>
+                    </div>
+                </div>
+                <p class="texto-testimonio">Estos libros me enseñaron a liderar con autenticidad. Mi equipo nota la diferencia y yo me siento más segura que nunca.</p>
+                <div class="calificacion-testimonio">⭐⭐⭐⭐⭐</div>
+            </div>
+
+            <div class="tarjeta-testimonio">
+                <div class="encabezado-testimonio">
+                    <div class="avatar-testimonio">CA</div>
+                    <div class="info-testimonio">
+                        <div class="nombre-testimonio">Carlos Andrade</div>
+                        <div class="rol-testimonio">Estudiante</div>
+                    </div>
+                </div>
+                <p class="texto-testimonio">Antes era una oveja del montón. Ahora tengo claridad en mis metas y la disciplina para alcanzarlas.</p>
+                <div class="calificacion-testimonio">⭐⭐⭐⭐⭐</div>
+            </div>
+
+            <div class="tarjeta-testimonio">
+                <div class="encabezado-testimonio">
+                    <div class="avatar-testimonio">LM</div>
+                    <div class="info-testimonio">
+                        <div class="nombre-testimonio">Laura Morales</div>
+                        <div class="rol-testimonio">Coach Personal</div>
+                    </div>
+                </div>
+                <p class="texto-testimonio">La filosofía del alfa es transformadora. Uso estos principios con mis clientes y los resultados son impresionantes.</p>
+                <div class="calificacion-testimonio">⭐⭐⭐⭐⭐</div>
+            </div>
+
+            <div class="tarjeta-testimonio">
+                <div class="encabezado-testimonio">
+                    <div class="avatar-testimonio">DR</div>
+                    <div class="info-testimonio">
+                        <div class="nombre-testimonio">Diego Rojas</div>
+                        <div class="rol-testimonio">Atleta</div>
+                    </div>
+                </div>
+                <p class="texto-testimonio">La mentalidad que desarrollé me llevó a superar mis límites físicos y mentales. Totalmente recomendado.</p>
+                <div class="calificacion-testimonio">⭐⭐⭐⭐⭐</div>
+            </div>
+
+            <div class="tarjeta-testimonio">
+                <div class="encabezado-testimonio">
+                    <div class="avatar-testimonio">SF</div>
+                    <div class="info-testimonio">
+                        <div class="nombre-testimonio">Sofía Fernández</div>
+                        <div class="rol-testimonio">Ejecutiva</div>
+                    </div>
+                </div>
+                <p class="texto-testimonio">Pasé de sentirme perdida a tener una visión clara. Mi carrera despegó cuando apliqué la disciplina del lobo.</p>
+                <div class="calificacion-testimonio">⭐⭐⭐⭐⭐</div>
+            </div>
+
+            <!-- Duplicados para efecto infinito -->
+            <div class="tarjeta-testimonio">
+                <div class="encabezado-testimonio">
+                    <div class="avatar-testimonio">JR</div>
+                    <div class="info-testimonio">
+                        <div class="nombre-testimonio">Juan Ramírez</div>
+                        <div class="rol-testimonio">Emprendedor</div>
+                    </div>
+                </div>
+                <p class="texto-testimonio">Camino del Alfa cambió mi mentalidad. Pasé de procrastinar a tener disciplina diaria. Mis resultados hablaron por sí solos.</p>
+                <div class="calificacion-testimonio">⭐⭐⭐⭐⭐</div>
+            </div>
+
+            <div class="tarjeta-testimonio">
+                <div class="encabezado-testimonio">
+                    <div class="avatar-testimonio">MC</div>
+                    <div class="info-testimonio">
+                        <div class="nombre-testimonio">María Contreras</div>
+                        <div class="rol-testimonio">Líder de Equipo</div>
+                    </div>
+                </div>
+                <p class="texto-testimonio">Estos libros me enseñaron a liderar con autenticidad. Mi equipo nota la diferencia y yo me siento más segura que nunca.</p>
+                <div class="calificacion-testimonio">⭐⭐⭐⭐⭐</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN 6: COMPARACIÓN -->
+    <section class="seccion-comparacion">
+        <h2 class="titulo-seccion">⚔️ ¿Seguirás Siendo Oveja o Te Convertirás en Lobo? ⚔️</h2>
+        <div class="contenedor-comparacion">
+            <div class="lado-comparacion lado-izquierdo">
+                <h3>🐑 Mentalidad de Oveja</h3>
                 <ul>
-                    <li>Diciendo "mañana empiezo" y viendo pasar otro mes sin cambios</li>
-                    <li>Sintiendo que no tienen tiempo, pero perdiéndolo en redes</li>
-                    <li>Comenzando hábitos que abandonan a la primera semana</li>
-                    <li>Viviendo con ansiedad y falta de enfoque</li>
+                    <li>Vivir en piloto automático sin propósito</li>
+                    <li>Dejarse llevar por la opinión del rebaño</li>
+                    <li>Rendirse al primer obstáculo</li>
+                    <li>Culpar a las circunstancias</li>
                 </ul>
             </div>
-            <div class="comparison-side comparison-right">
-                <h3>✨ Los Que Van a</h3>
+            <div class="lado-comparacion lado-derecho">
+                <h3>🐺 Mentalidad de Lobo</h3>
                 <ul>
-                    <li>Entender y sanar patrones mentales que los limitaban</li>
-                    <li>Ganar 1-2 horas productivas al día</li>
-                    <li>Sentir más claridad mental y menos ansiedad</li>
-                    <li>Dejar de procrastinar y encontrar su propósito</li>
+                    <li>Vivir con propósito y visión clara</li>
+                    <li>Liderar sin importar las críticas</li>
+                    <li>Convertir obstáculos en oportunidades</li>
+                    <li>Asumir responsabilidad total</li>
                 </ul>
             </div>
         </div>
     </section>
 
-    <!-- SECCIÓN 10: FAQ -->
-    <section class="faq-section">
-        <h2 class="faq-title">❓ Preguntas Frecuentes</h2>
-        <div class="faq-container">
-            <div class="faq-item">
-                <div class="faq-question" onclick="toggleFaq(this)">
-                    ¿Cuánto tiempo tengo acceso?
-                    <span class="faq-icon">👁️</span>
+    <!-- SECCIÓN 7: FAQ -->
+    <section class="seccion-faq">
+        <h2 class="titulo-seccion">❓ Preguntas Frecuentes ❓</h2>
+        <div class="contenedor-faq">
+            <div class="item-faq">
+                <div class="pregunta-faq" onclick="alternarFaq(this)">
+                    <span>¿En qué formato recibo los libros?</span>
+                    <span class="icono-faq">🐺</span>
                 </div>
-                <div class="faq-answer">
-                    Tienes acceso de por vida a todos los materiales. Una vez que compras, es tuyo para siempre.
-                </div>
-            </div>
-            <div class="faq-item">
-                <div class="faq-question" onclick="toggleFaq(this)">
-                    ¿Funciona realmente?
-                    <span class="faq-icon">👁️</span>
-                </div>
-                <div class="faq-answer">
-                    Más de 900 personas han transformado su vida con este método. Los resultados dependen de tu compromiso.
+                <div class="respuesta-faq">
+                    Los libros se entregan en formato PDF de alta calidad, optimizado para cualquier dispositivo. El paquete completo incluye versiones en audio MP3.
                 </div>
             </div>
-            <div class="faq-item">
-                <div class="faq-question" onclick="toggleFaq(this)">
-                    ¿Hay garantía?
-                    <span class="faq-icon">👁️</span>
+
+            <div class="item-faq">
+                <div class="pregunta-faq" onclick="alternarFaq(this)">
+                    <span>¿Realmente funcionan estos libros?</span>
+                    <span class="icono-faq">🐺</span>
                 </div>
-                <div class="faq-answer">
-                    Sí, tienes 30 días de garantía total. Si no estás satisfecho, te devolvemos tu dinero sin preguntas.
+                <div class="respuesta-faq">
+                    Más de 5,000 personas han transformado su mentalidad con nuestro contenido. Los resultados dependen de tu compromiso y aplicación.
                 </div>
             </div>
-            <div class="faq-item">
-                <div class="faq-question" onclick="toggleFaq(this)">
-                    ¿Necesito experiencia previa?
-                    <span class="faq-icon">👁️</span>
+
+            <div class="item-faq">
+                <div class="pregunta-faq" onclick="alternarFaq(this)">
+                    <span>¿Hay garantía de devolución?</span>
+                    <span class="icono-faq">🐺</span>
                 </div>
-                <div class="faq-answer">
-                    No necesitas ninguna experiencia. Todo está diseñado para principiantes y viene con guías paso a paso.
+                <div class="respuesta-faq">
+                    Sí, ofrecemos garantía de 30 días. Si no estás satisfecho, te devolvemos tu dinero sin preguntas.
+                </div>
+            </div>
+
+            <div class="item-faq">
+                <div class="pregunta-faq" onclick="alternarFaq(this)">
+                    <span>¿Cuánto tiempo tengo acceso?</span>
+                    <span class="icono-faq">🐺</span>
+                </div>
+                <div class="respuesta-faq">
+                    Tienes acceso de por vida. Una vez que compras, los libros son tuyos para siempre.
+                </div>
+            </div>
+
+            <div class="item-faq">
+                <div class="pregunta-faq" onclick="alternarFaq(this)">
+                    <span>¿Necesito experiencia previa?</span>
+                    <span class="icono-faq">🐺</span>
+                </div>
+                <div class="respuesta-faq">
+                    No necesitas experiencia. Los libros están diseñados para cualquier persona que quiera mejorar.
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- SECCIÓN 11: CTA FINAL -->
-    <section class="final-cta">
-        <h2>⏰ La Vida No Espera ⏰</h2>
-        <p>
-            La vida no espera a que estés listo. Y el miedo... nunca desaparece del todo.
-            Si sigues esperando el momento perfecto, quizá termines viendo tu historia desde la ventana.
-        </p>
-        <p>
-            <strong>Atrévete hoy. Aunque tiemble el corazón. Aunque no tengas todas las respuestas.</strong>
-        </p>
-        <p>
-            Porque lo único peor que fallar, es no haberlo intentado nunca.
-        </p>
-        <button class="cta-button" style="margin-top: 30px;">COMENZAR AHORA</button>
+    <!-- SECCIÓN 8: CTA FINAL -->
+    <section class="seccion-cta-final">
+        <div class="contenido-cta-final">
+            <h2>⏰ El Momento de Despertar Es AHORA ⏰</h2>
+            <p>Puedes seguir viviendo como oveja sin propósito...</p>
+            <p>O puedes dar el primer paso hacia tu transformación hoy.</p>
+            <p><strong>El lobo no espera el momento perfecto. El lobo CREA el momento.</strong></p>
+            <p>Dentro de 30 días puedes ser una persona completamente diferente.</p>
+            <p style="font-size: 1.6rem; margin-top: 30px;">¿Estás listo para despertar al alfa que llevas dentro?</p>
+            <a href="#libros" class="boton-cta">Comenzar Mi Transformación</a>
+        </div>
     </section>
 </body>
 
-    <!-- SECCIÓN 12: FOOTER -->
-    <footer class="footer">
-        <div class="footer-logo">TU MARCA</div>
-        <p>Realizado con 💜 para tu transformación</p>
-        <div class="footer-products">
-            <div class="footer-product">Producto 1</div>
-            <div class="footer-product">Producto 2</div>
-            <div class="footer-product">Producto 3</div>
-            <div class="footer-product">Producto 4</div>
+    <!-- FOOTER  -->
+    <footer class="pie-pagina">
+        <div class="logo-footer">
+            <span>🐺</span>
+            <span>CAMINO DEL ALFA</span>
         </div>
-        <p style="margin-top: 40px; opacity: 0.5; font-size: 0.9rem;">
-            © 2025 - Todos los derechos reservados
-        </p>
+        <p>Transformando vidas a través de la filosofía del lobo</p>
+        
+        <div class="enlaces-sociales">
+            <a href="#" class="enlace-social facebook" aria-label="Facebook">📘</a>
+            <a href="#" class="enlace-social instagram" aria-label="Instagram">📸</a>
+            <a href="#" class="enlace-social tiktok" aria-label="TikTok">🎵</a>
+            <a href="#" class="enlace-social youtube" aria-label="YouTube">📺</a>
+        </div>
+
+        <div class="copyright">
+            <p>© 2025 Camino del Alfa. Todos los derechos reservados.</p>
+            <p>Hecho con 🐺 para lobos que buscan despertar</p>
+        </div>
     </footer>
+
+
+
+    <!-- REDES SOCIALES
+    
+    https://www.youtube.com/@camino_del_alfa
+    
+    https://www.tiktok.com/@camino_del_alfa?is_from_webapp=1&sender_device=pc
+
+
+
+
+    -->
