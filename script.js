@@ -1,6 +1,4 @@
-
-
-        // Alternar FAQ
+// Alternar FAQ
         function alternarFaq(elemento) {
             const respuesta = elemento.nextElementSibling;
             const icono = elemento.querySelector('.icono-faq');
