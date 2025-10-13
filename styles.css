@@ -145,13 +145,27 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            max-height: ;
         }
 
         .imagen-lobo {
+            size: 10%;
             font-size: 35rem;
-            opacity: 0.15;
+            opacity: 0.95;
             filter: grayscale(20%);
             animation: flotarLobo 6s ease-in-out infinite;
+        }
+
+        .imagen-lobo img {
+            width: 100%;
+            max-width: 700px;
+            height: auto;
+            }
+
+            @media (max-width: 600px) {
+            img {
+                max-width: 300px;
+            }
         }
 
         @keyframes flotarLobo {
@@ -399,7 +413,7 @@
 
         /* SECCIÓN 3: PAQUETE COMPLETO */
         .seccion-paquete {
-            background: linear-gradient(135deg, var(--azul-acento) 0%, #1e40af 50%, var(--azul-oscuro) 100%);
+            background: linear-gradient(135deg, var(--azul-acento) 0%, #0f2057 50%, var(--azul-oscuro) 100%);
             padding: 120px 20px;
             position: relative;
             overflow: hidden;
@@ -741,7 +755,7 @@
 
         /* SECCIÓN 7: CTA FINAL */
         .seccion-cta-final {
-            background: linear-gradient(135deg, var(--azul-acento) 0%, #1e40af 100%);
+            background: linear-gradient(135deg, var(--azul-acento) 0%, #0a1431 100%);
             padding: 120px 20px;
             text-align: center;
             position: relative;
