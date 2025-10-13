@@ -835,6 +835,10 @@
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
         }
 
+        .fab{
+            color: #ffffff;
+        }
+
         .enlace-social:hover {
             transform: translateY(-5px) scale(1.05);
             box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);

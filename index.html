@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tu Página de Transformación</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <script src="script.js"></script>
     
 </head>
@@ -40,6 +41,69 @@
                 <div class="tiempo-timer" id="tiempoDisplay">15:00</div>
                 <div class="mensaje-timer">¡No lo dejes<br>escapar!</div>
             </div>
+
+            <script>
+                // TIMER CIRCULAR DE 15 MINUTOS
+                const tiempoTotal = 15 * 60; // 15 minutos en segundos
+                let tiempoRestante = tiempoTotal;
+                const circuloProgreso = document.getElementById('circuloProgreso');
+                const tiempoDisplay = document.getElementById('tiempoDisplay');
+                const loboTimer = document.getElementById('loboTimer');
+                const radio = 82;
+                const circunferencia = 2 * Math.PI * radio;
+
+                // Configurar el círculo
+                circuloProgreso.style.strokeDasharray = circunferencia;
+                circuloProgreso.style.strokeDashoffset = 0;
+
+                function actualizarTimer() {
+                    if (tiempoRestante <= 0) {
+                        tiempoRestante = tiempoTotal; // Reiniciar cuando llegue a 0
+                    }
+
+                    // Calcular minutos y segundos
+                    const minutos = Math.floor(tiempoRestante / 60);
+                    const segundos = tiempoRestante % 60;
+                    
+                    // Actualizar display
+                    tiempoDisplay.textContent = `${minutos}:${segundos.toString().padStart(2, '0')}`;
+
+                    // Calcular progreso (invertido para que baje)
+                    const progreso = (tiempoTotal - tiempoRestante) / tiempoTotal;
+                    const offset = circunferencia * progreso;
+                    circuloProgreso.style.strokeDashoffset = offset;
+
+                    // Animar el lobo a medida que avanza
+                    const opacidadLobo = 0.15 + (progreso * 0.65); // De 0.15 a 0.8
+                    const grayscale = 100 - (progreso * 100); // De 100% a 0%
+                    loboTimer.style.opacity = opacidadLobo;
+                    loboTimer.style.filter = `grayscale(${grayscale}%)`;
+
+                    tiempoRestante--;
+                }
+
+                // Actualizar cada segundo
+                actualizarTimer(); // Llamada inicial
+                setInterval(actualizarTimer, 1000);
+
+                // Ocultar timer en móvil cuando se hace scroll (opcional)
+                let ultimoScroll = 0;
+                const timerFlotante = document.querySelector('.timer-flotante');
+                
+                window.addEventListener('scroll', () => {
+                    if (window.innerWidth > 768) {
+                        const scrollActual = window.pageYOffset;
+                        
+                        if (scrollActual > ultimoScroll && scrollActual > 200) {
+                            timerFlotante.style.opacity = '0.3';
+                        } else {
+                            timerFlotante.style.opacity = '1';
+                        }
+                        
+                        ultimoScroll = scrollActual;
+                    }
+                });
+            </script>
         </div>
     </div>
 
@@ -160,17 +224,17 @@
                 <li class="item-paquete">
                     <span class="icono-item">🎯</span>
                     <div class="info-item">
-                        <h4>BONO: Plan Maestro 90 Días</h4>
-                        <p>Guía día a día para tu transformación</p>
+                        <h4>BONO: Plan maestro </h4>
+                        <p>Guía completa para tu transformación</p>
                     </div>
                 </li>
-                <li class="item-paquete">
+                <!--<li class="item-paquete">
                     <span class="icono-item">🎧</span>
                     <div class="info-item">
                         <h4>BONO: Audiolibros Completos</h4>
                         <p>Versión en audio de todos los libros</p>
                     </div>
-                </li>
+                </li>-->
             </ul>
 
             <div class="precio-paquete">
@@ -227,7 +291,7 @@
                 <div class="encabezado-testimonio">
                     <div class="avatar-testimonio">LM</div>
                     <div class="info-testimonio">
-                        <div class="nombre-testimonio">Laura Morales</div>
+                        <div class="nombre-testimonio">Laura Cáceres</div>
                         <div class="rol-testimonio">Coach Personal</div>
                     </div>
                 </div>
@@ -390,15 +454,15 @@
         <p>Transformando vidas a través de la filosofía del lobo</p>
         
         <div class="enlaces-sociales">
-            <a href="#" class="enlace-social facebook" aria-label="Facebook">📘</a>
-            <a href="#" class="enlace-social instagram" aria-label="Instagram">📸</a>
-            <a href="#" class="enlace-social tiktok" aria-label="TikTok">🎵</a>
-            <a href="#" class="enlace-social youtube" aria-label="YouTube">📺</a>
+            <a href="#" class="enlace-social facebook" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="enlace-social instagram" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.tiktok.com/@camino_del_alfa?is_from_webapp=1&sender_device=pc" class="enlace-social tiktok" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+            <a href="https://www.youtube.com/@camino_del_alfa" class="enlace-social youtube" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
         </div>
 
         <div class="copyright">
             <p>© 2025 Camino del Alfa. Todos los derechos reservados.</p>
-            <p>Hecho con 🐺 para lobos que buscan despertar</p>
+            <p>Hecho para lobos que buscan despertar</p>
         </div>
     </footer>
 
