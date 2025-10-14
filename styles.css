@@ -151,13 +151,14 @@
         .imagen-lobo {
             size: 10%;
             font-size: 35rem;
-            opacity: 0.95;
-            filter: grayscale(20%);
+            opacity: 1;
+            filter: grayscale(50%);
             animation: flotarLobo 6s ease-in-out infinite;
         }
 
         .imagen-lobo img {
             width: 100%;
+            filter: invert(1);
             max-width: 700px;
             height: auto;
             }
@@ -366,15 +367,24 @@
             width: 220px;
             height: 300px;
             margin: 0 auto 30px;
-            background: linear-gradient(135deg, var(--azul-acento), var(--azul-claro));
+            /*background: linear-gradient(135deg, var(--azul-acento), var(--azul-claro));*/
             border-radius: 15px;
-            display: flex;
+            /*display: flex;
             align-items: center;
-            justify-content: center;
+            justify-content: center;*/
             font-size: 5rem;
             box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
             position: relative;
             z-index: 1;
+            overflow: hidden;
+        }
+
+        .portada-libro img {
+            width: 100%; /* La imagen ocupará el 100% del ancho del div padre */
+            height: 100%; /* La imagen ocupará el 100% del alto del div padre */
+            object-fit: cover; /* **CLAVE**: Esto hará que la imagen cubra todo el espacio, manteniendo su relación de aspecto y recortando si es necesario. */
+            display: block; /* Elimina cualquier espacio extra que algunos navegadores puedan añadir debajo de las imágenes */
+            border-radius: 15px; /* Opcional: Si quieres que la imagen misma tenga los bordes redondeados */
         }
 
         .tarjeta-libro h3 {
