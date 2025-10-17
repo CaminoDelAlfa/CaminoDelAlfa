@@ -53,6 +53,13 @@
             gap: 10px;
         }
 
+        .logo span img{
+            margin-top: 5px;
+            max-height: 35px;
+            max-width: 35px;
+            filter: invert(1);
+        }
+
         /* SECCIÓN 1: HERO MINIMALISTA */
         .seccion-hero-principal {
             min-height: 100vh;
@@ -145,7 +152,6 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            max-height: ;
         }
 
         .imagen-lobo {
@@ -242,6 +248,11 @@
             margin-bottom: 20px;
             filter: grayscale(40%);
             transition: filter 0.3s ease;
+        }
+        .icono-pregunta img{
+            max-height: 55px;
+            max-width: 55px;
+            filter: invert(1);
         }
 
         .tarjeta-pregunta:hover .icono-pregunta {
@@ -423,7 +434,7 @@
 
         /* SECCIÓN 3: PAQUETE COMPLETO */
         .seccion-paquete {
-            background: linear-gradient(135deg, var(--azul-acento) 0%, #0f2057 50%, var(--azul-oscuro) 100%);
+            background: linear-gradient(135deg, var(--azul-medio) 0%, #262d47 50%, var(--azul-oscuro) 100%);
             padding: 120px 20px;
             position: relative;
             overflow: hidden;
@@ -538,7 +549,7 @@
         /* SECCIÓN 4: TESTIMONIOS */
         .seccion-testimonios {
             background: var(--azul-oscuro);
-            padding: 100px 20px;
+            padding: 90px 15px;
             overflow: hidden;
         }
 
@@ -555,9 +566,9 @@
         }
 
         .tarjeta-testimonio {
-            min-width: 380px;
+            min-width: 160px;
             background: var(--azul-medio);
-            padding: 35px;
+            padding: 25px;
             border-radius: 20px;
             border: 1px solid rgba(59, 130, 246, 0.2);
             position: relative;
@@ -583,16 +594,22 @@
         }
 
         .avatar-testimonio {
-            width: 70px;
-            height: 70px;
+            width: 50px;
+            height: 50px;
             border-radius: 50%;
             background: linear-gradient(135deg, var(--azul-acento), var(--azul-claro));
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 1.8rem;
+            font-size: 1.3rem;
             font-weight: bold;
             border: 3px solid var(--dorado);
+        }
+
+        .avatar-testimonio img{
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
         }
 
         .info-testimonio {
@@ -765,7 +782,7 @@
 
         /* SECCIÓN 7: CTA FINAL */
         .seccion-cta-final {
-            background: linear-gradient(135deg, var(--azul-acento) 0%, #0a1431 100%);
+            background: linear-gradient(135deg, var(--azul-medio) 0%, #0a1431 100%);
             padding: 120px 20px;
             text-align: center;
             position: relative;
@@ -1007,6 +1024,8 @@
             .contenedor-timer {
                 width: 150px;
                 height: 150px;
+                margin-top: 50px;
+                margin-bottom: 0;
             }
 
             .lobo-fondo {
@@ -1016,6 +1035,7 @@
             .tiempo-timer {
                 font-size: 1.6rem;
             }
+
         }
 
         @media (max-width: 768px) {
@@ -1099,12 +1119,12 @@
 
         @media (max-width: 768px) {
             .seccion-hero-principal {
-                padding: 80px 20px 40px;
-                min-height: auto;
+                padding: 50px 20px 0px;
+
             }
 
             .contenedor-hero-principal {
-                gap: 40px;
+                gap: 10px;
             }
 
             .titulo-principal {
@@ -1123,8 +1143,31 @@
                 font-size: 15rem;
             }
 
+            .carrusel-testimonios {
+                display: flex;
+                gap: 30px;
+                animation: desplazar-testimonios 60s linear infinite;
+                width: max-content;
+            }
+
+            .contenido-derecho {
+                margin-top: 50px;
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
             .titulo-presentacion {
                 font-size: 2rem;
+            }
+            .seccion-presentacion{
+                justify-content: center;
+                text-align: center;
+                max-height: fit-content;
+                margin-bottom: 0;
+            }
+            .contenedor-presentacion{
+                margin-top: 0;
             }
 
             .grid-preguntas {
@@ -1193,6 +1236,23 @@
         }
 
         @media (max-width: 480px) {
+            .seccion-hero-principal{
+                min-height: auto;
+            }
+
+            .subtitulo-principal{
+                margin-bottom: 10px;
+            }
+
+            .boton-cta-principal{
+                padding: 15px 40px;
+            }
+
+            .contenedor-timer{
+                margin-top: 65px;
+                margin-bottom: 5px;
+            }
+
             .titulo-principal {
                 font-size: 2rem;
             }
@@ -1202,8 +1262,9 @@
             }
 
             .insignia-hero {
-                font-size: 0.7rem;
-                padding: 10px 20px;
+                margin-top: 0;
+                font-size: 0.6rem;
+                padding: 7px 15px;
             }
 
             .imagen-lobo {
@@ -1214,6 +1275,11 @@
                 font-size: 1.2rem;
             }
 
+            .contenido-cta-final .boton-cta{
+                justify-content: center;
+                padding: 15px 40px;
+                font-size: 15px;
+            }
             .portada-libro {
                 width: 180px;
                 height: 250px;
@@ -1232,5 +1298,15 @@
 
             .texto-cta {
                 font-size: 1.1rem;
+            }
+
+            /*TESTIMONIO*/
+            .tarjeta-testimonio{
+                min-width: 420px;
+                background: var(--azul-medio);
+                padding: 35px;
+                border-radius: 20px;
+                border: 1px solid rgba(59, 130, 246, 0.2);
+                position: relative;
             }
         }
