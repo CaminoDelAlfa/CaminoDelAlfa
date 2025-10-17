@@ -567,10 +567,11 @@
 
         .tarjeta-testimonio {
             min-width: 160px;
-            background: var(--azul-medio);
+            /*background: var(--azul-medio);*/
+            background: rgba(239, 239, 240, 0.945);
             padding: 25px;
             border-radius: 20px;
-            border: 1px solid rgba(59, 130, 246, 0.2);
+            border: 2x solid rgba(47, 111, 214, 0.781);
             position: relative;
         }
 
@@ -597,13 +598,13 @@
             width: 50px;
             height: 50px;
             border-radius: 50%;
-            background: linear-gradient(135deg, var(--azul-acento), var(--azul-claro));
+            background: #2d3346d5;
             display: flex;
             align-items: center;
             justify-content: center;
             font-size: 1.3rem;
             font-weight: bold;
-            border: 3px solid var(--dorado);
+            border: 2px solid var(#0a1431);
         }
 
         .avatar-testimonio img{
@@ -619,24 +620,26 @@
         .nombre-testimonio {
             font-weight: 700;
             font-size: 1.2rem;
-            color: var(--dorado);
+            /*color: var(--dorado);*/
+            color: #0a1431;
             margin-bottom: 5px;
         }
 
         .rol-testimonio {
-            color: rgba(255, 255, 255, 0.6);
+            color: rgba(59, 58, 58, 0.6);
             font-size: 0.9rem;
         }
 
         .texto-testimonio {
             line-height: 1.7;
-            color: rgba(255, 255, 255, 0.85);
+            color: rgba(0, 0, 0, 0.85);
             font-size: 1.05rem;
         }
 
         .calificacion-testimonio {
             margin-top: 20px;
-            color: var(--dorado);
+            /*color: var(--dorado);*/
+            color: #0a1431;
             font-size: 1.2rem;
         }
 
